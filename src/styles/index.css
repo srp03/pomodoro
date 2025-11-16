@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #C8F7DC 0%, #D5E8F5 50%, #FFF7C2 100%);
+  background-attachment: fixed;
+  color: #2d5016;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Floating leaf animation */
+@keyframes float-leaf {
+  0%, 100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px) rotate(5deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-20px) translateX(-5px) rotate(-5deg);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(-10px) translateX(3px) rotate(3deg);
+    opacity: 0.4;
+  }
+}
+
